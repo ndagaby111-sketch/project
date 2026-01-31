@@ -12,10 +12,13 @@
 
 <!-- ================= NAVBAR ================= -->
 <nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+
   <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
 
+    <!-- Logo -->
     <h1 class="text-xl font-bold">Gabriel</h1>
 
+    <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-6">
       <a href="index.html" class="hover:text-yellow-300">Home</a>
       <a href="about.html" class="text-yellow-300 font-semibold">About</a>
@@ -24,8 +27,24 @@
       <a href="contact.html" class="hover:text-yellow-300">Contact</a>
     </div>
 
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+      ☰
+    </button>
+
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-center space-y-4 py-4">
+    <a href="index.html" class="block hover:text-yellow-300">Home</a>
+    <a href="about.html" class="block hover:text-yellow-300">About</a>
+    <a href="skills.html" class="block hover:text-yellow-300">Skills</a>
+    <a href="projects.html" class="block hover:text-yellow-300">Projects</a>
+    <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+  </div>
+
 </nav>
+
 
 <!-- ================= HEADER WITH BACKGROUND IMAGE ================= -->
 <section class="relative h-[60vh] flex items-center justify-center text-white text-center">
@@ -126,6 +145,15 @@
 <footer class="bg-gray-900 text-white text-center p-4">
   © 2026 Gabriel | Portfolio Project
 </footer>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
 </body>
 </html>
