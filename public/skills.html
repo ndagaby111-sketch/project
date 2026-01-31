@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills | Gabriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Gabriel</h1>
+
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="skills.html" class="font-semibold text-yellow-300">Skills</a>
+      <a href="project.html" class="hover:text-yellow-300">Projects</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HEADER WITH BACKGROUND ================= -->
+<section class="relative h-[45vh] flex items-center justify-center text-white text-center mt-16">
+
+  <!-- Background Image -->
+  <img
+    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Text -->
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold">My Skills</h2>
+    <p class="mt-3">Technologies I use in my projects</p>
+
+    <a href="index.html"
+       class="inline-block mt-6 bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+       ← Back Home
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS GRID ================= -->
+<section class="max-w-6xl mx-auto py-16 px-6">
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- HTML -->
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">HTML</h3>
+      <p>Creating structured and semantic webpages.</p>
+    </a>
+
+    <!-- Tailwind -->
+    <a href="https://tailwindcss.com/docs" target="_blank"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">Tailwind CSS</h3>
+      <p>Building modern responsive designs quickly.</p>
+    </a>
+
+    <!-- JavaScript -->
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+      <p>Adding interactivity and dynamic behavior.</p>
+    </a>
+
+    <!-- Git -->
+    <a href="https://git-scm.com/docs" target="_blank"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">Git</h3>
+      <p>Version control and project management.</p>
+    </a>
+
+    <!-- Responsive -->
+    <a href="about.html"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
+      <p>Mobile-friendly layouts using grid & flexbox.</p>
+    </a>
+
+    <!-- Projects -->
+    <a href="project.html"
+       class="bg-white p-8 rounded-xl shadow text-center hover:scale-105 hover:shadow-xl transition block">
+      <h3 class="text-xl font-bold mb-2">Problem Solving</h3>
+      <p>See how I solve problems in my projects →</p>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ================= QUICK LINKS ================= -->
+<div class="text-center pb-12 space-x-4">
+  <a href="about.html" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">About</a>
+  <a href="project.html" class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700">Projects</a>
+  <a href="contact.html" class="bg-yellow-500 text-black px-5 py-2 rounded hover:bg-yellow-400">Contact</a>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white text-center p-4">
+  © 2026 Gabriel | Skills Page
+</footer>
+
+</body>
+</html>

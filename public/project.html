@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Gabriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Gabriel</h1>
+
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="skills.html" class="hover:text-yellow-300">Skills</a>
+      <a href="project.html" class="font-semibold text-yellow-300">Projects</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HEADER WITH BACKGROUND ================= -->
+<section class="relative h-[45vh] flex items-center justify-center text-white text-center mt-16">
+
+  <!-- Background image -->
+  <img
+    src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Text -->
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold">My Projects</h2>
+    <p class="mt-3">Some of the websites I created</p>
+
+    <a href="index.html"
+       class="inline-block mt-6 bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+       ← Back Home
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS GRID ================= -->
+<section class="max-w-6xl mx-auto py-16 px-6">
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Project 1 -->
+    <a href="index.html"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?1" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600">
+          Personal portfolio created using HTML and Tailwind CSS.
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Project 2 -->
+    <a href="skills.html"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?2" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Skills Showcase</h3>
+        <p class="text-gray-600">
+          Skills page with responsive cards and animations.
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Project 3 -->
+    <a href="contact.html"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?3" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Contact Form</h3>
+        <p class="text-gray-600">
+          Simple contact page layout for user communication.
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Project 4 -->
+    <a href="about.html"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?4" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">About Page</h3>
+        <p class="text-gray-600">
+          Profile and education information with clean layout.
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Project 5 -->
+    <a href="#"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?5" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Future Project</h3>
+        <p class="text-gray-600">
+          More exciting projects coming soon.
+        </p>
+      </div>
+    </a>
+
+
+    <!-- Project 6 -->
+    <a href="#"
+       class="bg-white rounded-xl shadow overflow-hidden hover:scale-105 hover:shadow-xl transition block">
+
+      <img src="https://picsum.photos/600/400?6" class="w-full h-48 object-cover">
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Mini Apps</h3>
+        <p class="text-gray-600">
+          Small practice apps to improve coding skills.
+        </p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ================= QUICK LINKS ================= -->
+<div class="text-center pb-12 space-x-4">
+  <a href="about.html" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">About</a>
+  <a href="skills.html" class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700">Skills</a>
+  <a href="contact.html" class="bg-yellow-500 text-black px-5 py-2 rounded hover:bg-yellow-400">Contact</a>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white text-center p-4">
+  © 2026 Gabriel | Projects Page
+</footer>
+
+</body>
+</html>

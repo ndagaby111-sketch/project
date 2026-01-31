@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Gabriel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl">Gabriel</h1>
+
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="skills.html" class="hover:text-yellow-300">Skills</a>
+      <a href="project.html" class="hover:text-yellow-300">Projects</a>
+      <a href="contact.html" class="font-semibold text-yellow-300">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HEADER WITH BACKGROUND ================= -->
+<section class="relative h-[45vh] flex items-center justify-center text-white text-center mt-16">
+
+  <!-- Background image -->
+  <img
+    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Text -->
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold">Contact Me</h2>
+    <p class="mt-3">Let's connect and work together</p>
+
+    <a href="index.html"
+       class="inline-block mt-6 bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+       ← Back Home
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="py-16 px-6">
+
+
+<form class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-xl space-y-5">
+
+    <h3 class="text-2xl font-bold text-center mb-4">Send a Message</h3>
+
+    <!-- Name (letters only validation) -->
+    <input
+  type="text"
+  placeholder="Full Name"
+  pattern="[A-Za-z ]+"
+  title="Only letters allowed"
+  oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')"
+  class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+  required
+/>
+
+
+    <!-- Email -->
+    <input
+      type="email"
+      placeholder="Email Address"
+      class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+      required
+    />
+
+    <!-- Message -->
+    <textarea
+      placeholder="Your Message"
+      rows="5"
+      class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+      required
+    ></textarea>
+
+    <!-- Button -->
+    <button
+      type="submit"
+      class="bg-blue-600 text-white px-6 py-3 rounded w-full hover:bg-blue-700 hover:scale-105 transition font-semibold">
+      Send Message
+    </button>
+
+  </form>
+
+</section>
+
+
+<!-- ================= QUICK LINKS ================= -->
+<div class="text-center pb-12 space-x-4">
+  <a href="about.html" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">About</a>
+  <a href="skills.html" class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700">Skills</a>
+  <a href="project.html" class="bg-purple-600 text-white px-5 py-2 rounded hover:bg-purple-700">Projects</a>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white text-center p-4">
+  © 2026 Gabriel | Contact Page
+</footer>
+
+</body>
+</html>
