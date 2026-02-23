@@ -1,159 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me</title>
+  <meta charset="UTF-8">
+  <title>About | Zachee Nda Nda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 text-gray-900 font-[Inter]">
 
-<!-- ================= NAVBAR ================= -->
-<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
-  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div>
+        <h1 class="text-lg font-semibold tracking-wide">
+          Zachee Nda Nda
+        </h1>
+        <p class="text-xs text-gray-500">
+          Senior Electrical & Electronics Engineer
+        </p>
+      </div>
 
-    <!-- Logo -->
-    <h1 class="text-xl font-bold">Gabriel</h1>
+      <ul class="hidden md:flex space-x-10 text-sm font-medium text-gray-600">
+        <li><a href="index.html" class="hover:text-black">Home</a></li>
+        <li><a href="about.html" class="text-black font-semibold">About</a></li>
+        <li><a href="experience.html" class="hover:text-black">Experience</a></li>
+        <li><a href="expertise.html" class="hover:text-black">Expertise</a></li>
+        <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+      </ul>
 
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6">
-      <a href="index.html" class="hover:text-yellow-300">Home</a>
-      <a href="about.html" class="text-yellow-300 font-semibold">About</a>
-      <a href="skills.html" class="hover:text-yellow-300">Skills</a>
-      <a href="project.html" class="hover:text-yellow-300">Projects</a>
-      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      <button id="menu-btn" class="md:hidden text-gray-700 text-xl">
+        ☰
+      </button>
     </div>
 
-    <!-- Mobile Button -->
-    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
-      ☰
-    </button>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block font-semibold">About</a>
+      <a href="experience.html" class="block">Experience</a>
+      <a href="expertise.html" class="block">Expertise</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
 
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-center space-y-4 py-4">
-    <a href="index.html" class="block hover:text-yellow-300">Home</a>
-    <a href="about.html" class="block hover:text-yellow-300">About</a>
-    <a href="skills.html" class="block hover:text-yellow-300">Skills</a>
-    <a href="project.html" class="block hover:text-yellow-300">Projects</a>
-    <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
-  </div>
-
-</nav>
-
-
-<!-- ================= HEADER WITH BACKGROUND IMAGE ================= -->
-<section class="relative h-[60vh] flex items-center justify-center text-white text-center">
-
-  <!-- Background Image -->
-  <div class="absolute inset-0">
-    <img 
-      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-      class="w-full h-full object-cover"
-    />
-  </div>
-
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <!-- Text Content -->
-  <div class="relative z-10">
-    <h2 class="text-4xl md:text-5xl font-bold">About Me</h2>
-    <p class="mt-3">Know more about my journey and skills</p>
-  </div>
-
-</section>
-
-
-
-<!-- ================= ABOUT CONTENT ================= -->
-<section class="max-w-5xl mx-auto px-6 py-16">
-
-  <div class="grid md:grid-cols-2 gap-10 items-center">
-
-    <!-- Clickable Image -->
-    <a href="index.html">
-      <img
-        src="https://picsum.photos/500/500"
-        class="rounded-xl shadow-lg w-full hover:scale-105 transition duration-300"
-      />
-    </a>
-
-    <!-- Text -->
-    <div>
-      <h3 class="text-2xl font-bold mb-4">Hello! I'm Gabriel 👋</h3>
-
-      <p class="text-gray-600 mb-4">
-        I am a dedicated student with a strong interest in web development.
-        I enjoy designing clean and responsive websites using
-        <a href="skills.html" class="text-blue-600 font-semibold hover:underline">
-          HTML and Tailwind CSS
-        </a>.
-      </p>
-
-      <p class="text-gray-600 mb-4">
-        This project helped me understand layout design, responsive grids,
-        flexbox, and modern UI development techniques.
-      </p>
-
-      <p class="text-gray-600">
-        My goal is to continue improving my programming skills and become a
-        professional web developer in the future.
+  <!-- ================= HEADER ================= -->
+  <section class="pt-40 pb-16 px-6 bg-white border-b border-gray-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-4">
+        About
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Federal engineering leader with 15 years of continuous service supporting U.S. diplomatic infrastructure and mission-critical systems.
       </p>
     </div>
+  </section>
 
-  </div>
+  <!-- ================= MAIN CONTENT ================= -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
 
-</section>
+      <!-- LEFT COLUMN -->
+      <div class="space-y-8">
 
+        <h3 class="text-2xl font-semibold">
+          Professional Background
+        </h3>
 
-<!-- ================= EDUCATION ================= -->
-<section class="bg-gray-100 py-16 text-center">
+        <p class="text-gray-700 leading-relaxed">
+          I am a Senior Electrical & Electronics Engineer with over 15 years of service 
+          within the U.S. Department of State (Embassy Yaoundé). As a Special Immigrant 
+          Visa (SIV) recipient, I bring a fully vetted federal background, deep 
+          understanding of U.S. government safety standards, and proven mission-critical 
+          engineering leadership.
+        </p>
 
-  <h3 class="text-3xl font-bold mb-8">Education</h3>
+        <p class="text-gray-700 leading-relaxed">
+          My expertise spans electrical infrastructure, building commissioning, 
+          industrial automation, contractor safety oversight, and federal compliance 
+          under USACE EM 385-1-1, NFPA 70E, OSHA 1910, and OBO design criteria.
+        </p>
 
-  <div class="max-w-3xl mx-auto space-y-6">
+        <p class="text-gray-700 leading-relaxed">
+          Throughout my career, I have maintained 100% infrastructure uptime during 
+          high-risk regional instability, earning the Mission Eagle Award for technical 
+          excellence and operational reliability.
+        </p>
 
-    <a href="skills.html" class="block bg-white p-6 rounded-lg shadow hover:scale-105 transition">
-      <h4 class="font-semibold">High School</h4>
-      <p class="text-gray-600">Science Stream</p>
-    </a>
+      </div>
 
-    <a href="projects.html" class="block bg-white p-6 rounded-lg shadow hover:scale-105 transition">
-      <h4 class="font-semibold">Web Development Training</h4>
-      <p class="text-gray-600">HTML, CSS, Tailwind CSS Basics</p>
-    </a>
+      <!-- RIGHT COLUMN -->
+      <div class="space-y-10">
 
-  </div>
+        <!-- Education -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4">Education</h4>
+          <p class="font-medium">
+            M.Sc. Electronics, Electrotechnics & Automation
+          </p>
+          <p class="text-gray-600 mb-4">
+            University of Dschang
+          </p>
 
-</section>
+          <p class="font-medium">
+            B.Sc. Electrical Engineering (D.U.T.)
+          </p>
+          <p class="text-gray-600">
+            University of Dschang
+          </p>
+        </div>
 
+        <!-- Federal Credentials -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4">Federal Credentials</h4>
 
-<!-- ================= QUICK LINKS ================= -->
-<div class="text-center py-10 space-x-4">
-  <a href="skills.html" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">Skills</a>
-  <a href="projects.html" class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700">Projects</a>
-  <a href="contact.html" class="bg-yellow-500 text-black px-5 py-2 rounded hover:bg-yellow-400">Contact</a>
-</div>
+          <ul class="space-y-3 text-gray-700">
+            <li>• USACE EM 385-1-1 Contractor Safety Oversight</li>
+            <li>• NFPA 70E Electrical Hazard Specialist</li>
+            <li>• FEMP / WBDG Commissioning Certified</li>
+            <li>• OSHA 1910 Familiarization</li>
+            <li>• 15+ Years Continuous U.S. Government Vetting</li>
+          </ul>
+        </div>
 
+      </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-gray-900 text-white text-center p-4">
-  © 2026 Gabriel | Portfolio Project
-</footer>
+    </div>
+  </section>
 
-<script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+    © 2026 Zachee Nda Nda | Federal Engineering Portfolio
+  </footer>
 
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
+  <!-- Mobile Toggle -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 
 </body>
 </html>
